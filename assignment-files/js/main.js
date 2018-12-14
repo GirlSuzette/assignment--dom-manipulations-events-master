@@ -63,10 +63,10 @@ document.querySelectorAll('.individual').forEach(function (list) {
 
 
 /* TASK 5 (Adventure Mode) -- Change Text Background Color From Palette */
-var rectangle = document.querySelectorAll('.palette span');
+
 var text = document.querySelector('.msg');
 
-rectangle.forEach(function (color) {
+document.querySelectorAll('.palette span').forEach(function (color) {
     color.addEventListener('click', function (event) {
 
         var colorIs = event.target.attributes.class.textContent;
